@@ -44,6 +44,15 @@ SELECT DISTINCT year
   FROM car_models;
 
 --adds rows to the all_car_models
-INSERT INTO all_car_models (model_code, model_title)
-SELECT DISTINCT model_code, model_title
-  FROM car_models;
+
+-- INSERT INTO all_car_models(model_code, model_title, car_companies_id, release_year_id)
+-- SELECT (model_code, model_title) FROM car_models
+-- SELECT car_companies_id FROM car_companies
+-- SELECT release_year_id FROM release_year;
+
+-- FROM car_models VALUES (model_code, model_title)
+-- FROM car_companies VALUES (car_companies_id)
+-- FROM release_year VALUES (release_year_id);
+
+-- add two new rows represneting the foreign keys to the mast car-models table
+
